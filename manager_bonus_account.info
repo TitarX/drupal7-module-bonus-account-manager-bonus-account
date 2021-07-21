@@ -1,0 +1,14 @@
+name = Manager bonus account
+description = Manager bonus account
+core = 7.x
+package = Custom
+
+dependencies[] = user
+dependencies[] = commerce
+dependencies[] = commerce_product
+dependencies[] = commerce_price
+dependencies[] = commerce_order
+dependencies[] = commerce_line_item
+dependencies[] = commerce_customer
+dependencies[] = commerce_price_control
+dependencies[] = payment_systems_info

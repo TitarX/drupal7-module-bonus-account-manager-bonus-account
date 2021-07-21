@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Manager bonus account
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function manager_bonus_account_menu()
+{
+	$items['user/%/manager-customers-accounts'] = array(
+		'title' => t('Пользователи'),
+		'description' => t('Пользователи'),
+		'weight' => 100,
+		'page callback' => 'manager_customers_accounts_page',
+		'access callback' => 'check_roles',
+		'access arguments' => array(array('administrator', 'manager')),
+		'type' => MENU_LOCAL_TASK
+	);
+	
+	$items['user/%/manager-withdrawal-orders'] = array(
+		'title' => t('Заявки'),
+		'description' => t('Заявки'),
+		'weight' => 110,
+		'page callback' => 'manager_withdrawal_orders_page',
+		'access callback' => 'check_roles',
+		'access arguments' => array(array('administrator', 'manager')),
+		'type' => MENU_LOCAL_TASK
+	);
+	
+	$items['user/%/manager-adding-bonuses'] = array(
+		'title' => t('Начисление'),
+		'description' => t('Начисление'),
+		'weight' => 120,
+		'page callback' => 'manager_adding_bonuses_page',
+		'access callback' => 'check_roles',
+		'access arguments' => array(array('administrator', 'manager')),
+		'type' => MENU_LOCAL_TASK
+	);
+	
+	return $items;
+}
+
+module_load_include('inc', 'manager_bonus_account', 'includes/manager_customers_accounts_page');
+
+module_load_include('inc', 'manager_bonus_account', 'includes/manager_withdrawal_orders_page');
+
+module_load_include('inc', 'manager_bonus_account', 'includes/manager_adding_bonuses_page');
