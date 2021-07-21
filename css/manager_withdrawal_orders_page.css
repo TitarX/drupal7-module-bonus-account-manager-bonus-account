@@ -1,55 +1,47 @@
-form#bonus-withdrawal-orders-form div.form-item
-{
-	float: left;
-	width: 30%;
-	margin-right: 5%;
+form#bonus-withdrawal-orders-form div.form-item {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
 }
 
-form#bonus-withdrawal-orders-form fieldset
-{
-	margin-bottom: 0;
+form#bonus-withdrawal-orders-form fieldset {
+  margin-bottom: 0;
 }
 
-form#bonus-withdrawal-orders-form div.form-item.form-item-bonus-withdrawal-orders-status
-{
-	margin-right: 0;
+form#bonus-withdrawal-orders-form div.form-item.form-item-bonus-withdrawal-orders-status {
+  margin-right: 0;
 }
 
-form#bonus-withdrawal-orders-form div.form-item.form-item-bonus-withdrawal-orders-status:after
-{
-	clear: both;
+form#bonus-withdrawal-orders-form div.form-item.form-item-bonus-withdrawal-orders-status:after {
+  clear: both;
 }
 
-table.views-table
-{
-	border: 0;
-	border-collapse: collapse;
-	margin-top: 25px;
-	margin-bottom: 0;
+table.views-table {
+  border: 0;
+  border-collapse: collapse;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-table.views-table caption
-{
-	border: 1px solid #3F4042;
-	padding: 10px 15px;
-	background-color: #3F4042;
-    color: #FFFFFF;
-	font-size: 17px;
+table.views-table caption {
+  border: 1px solid #3f4042;
+  padding: 10px 15px;
+  background-color: #3f4042;
+  color: #fff;
+  font-size: 17px;
 }
 
 table.views-table th,
-table.views-table td
-{
-	border: 1px solid #3F4042 !important;
-	text-align: center;
-	vertical-align: middle !important;
-	background-color: #FFFFFF;
+table.views-table td {
+  border: 1px solid #3f4042 !important;
+  text-align: center;
+  vertical-align: middle !important;
+  background-color: #fff;
 }
 
-.img-thumbnail
-{
-	margin-left: 2px !important;
-    padding: 2px !important;
-    background-color: transparent !important;
-    border: 0 !important;
+.img-thumbnail {
+  margin-left: 2px !important;
+  padding: 2px !important;
+  background-color: transparent !important;
+  border: 0 !important;
 }
